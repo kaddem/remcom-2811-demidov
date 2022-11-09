@@ -1,0 +1,10 @@
+.header {
+  padding: 26px 0;
+  background-color: $color-dark;
+}
+
+.header-inner {
+  @include inner;
+}
+
+
