@@ -1,4 +1,9 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
   padding: 26px 0;
   background-color: $color-dark;
 }
@@ -7,4 +12,25 @@
   @include inner;
 }
 
+.header-wrap {
+  display: flex;
+  align-items: center;
+}
 
+.logo {
+  margin-right: auto;
+  font-family: $font-title;
+  color: $color-light;
+  font-weight: 300;
+  font-size: 42px;
+  line-height: 49px;
+  text-decoration: none;
+}
+
+.header-tel {
+  margin-left: 100px;
+  font-size: 24px;
+  line-height: 33px;
+  color: $color-light;
+  text-decoration: none;
+}
