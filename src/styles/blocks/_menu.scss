@@ -1,4 +1,8 @@
 .menu {
+  @media (max-width: $tablet-max) {
+    display: none;
+  }
+
   ul {
     display: flex;
     list-style: none;

@@ -6,6 +6,14 @@
   width: 100%;
   padding: 26px 0;
   background-color: $color-dark;
+
+  @media (max-width: $tablet-max) {
+    padding: 29px 0;
+  }
+
+  @media (max-width: $mobile-max) {
+    padding: 4px 0;
+  }
 }
 
 .header-inner {
@@ -25,6 +33,16 @@
   font-size: 42px;
   line-height: 49px;
   text-decoration: none;
+
+  @media (max-width: $tablet-max) {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  @media (max-width: $mobile-max) {
+    font-size: 24px;
+    line-height: 28px;
+  }
 }
 
 .header-tel {
@@ -33,4 +51,12 @@
   line-height: 33px;
   color: $color-light;
   text-decoration: none;
+
+  @media (max-width: $tablet-max) {
+    margin-left: 0;
+  }
+
+  @media (max-width: $mobile-max) {
+    display: none;
+  }
 }
