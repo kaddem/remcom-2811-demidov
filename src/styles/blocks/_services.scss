@@ -48,3 +48,46 @@
     margin-top: 40px;
   }
 }
+
+.services-icon {
+  display: block;
+  width: 100px;
+  height: 56px;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.services-caption {
+  font-family: $font-title;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+
+  @media (max-width: $tablet-max) {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  @media (max-width: $mobile-max) {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+
+.services-text {
+  margin-top: 30px;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 38px;
+
+  @media (max-width: $tablet-max) {
+    margin-top: 20px;
+  }
+
+  @media (max-width: $mobile-max) {
+    margin-top: 15px;
+    font-size: 24px;
+    line-height: 33px;
+  }
+}
