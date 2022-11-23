@@ -60,3 +60,14 @@
     display: none;
   }
 }
+
+.burger {
+  display: none;
+
+  @media (max-width: $tablet-max) {
+    display: block;
+    width: 45px;
+    height: 45px;
+    margin-left: 35px;
+  }
+}
