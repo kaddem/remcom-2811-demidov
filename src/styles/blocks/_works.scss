@@ -1,0 +1,35 @@
+.works {
+  padding: 140px 0 130px;
+  background-color: rgba($color-light, .2);
+}
+
+.works-inner {
+  @include inner;
+}
+
+.works-title {
+  @include section-title;
+}
+
+.works-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 70px - $gap-half;
+  margin-left: -$gap-half;
+  margin-right: -$gap-half;
+  list-style: none;
+}
+
+.works-item {
+  flex-basis: 25%;
+  padding: $gap-half;
+}
+
+.work-card {
+  padding: 20px;
+  height: 100%;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid rgba($color-accent, .1);;
+  box-shadow: 0 0 5px rgba($color-accent, .1);
+}

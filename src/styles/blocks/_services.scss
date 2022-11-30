@@ -19,6 +19,10 @@
   @include section-title;
 }
 
+.services-title-bg {
+  background-color: red;
+}
+
 .services-list {
   display: flex;
   flex-wrap: wrap;

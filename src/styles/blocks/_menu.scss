@@ -1,11 +1,22 @@
 .menu {
   @media (max-width: $tablet-max) {
     display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    border-top: 1px solid $color-light;
+    background-color: $color-dark;
   }
 
   ul {
     display: flex;
     list-style: none;
+
+    @media (max-width: $tablet-max) {
+      justify-content: center;
+    }
   }
 
   li {
