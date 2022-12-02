@@ -10,3 +10,34 @@
 .contacts-title {
   @include section-title;
 }
+
+.contacts-info {
+  display: none;
+  margin-top: 50px;
+
+  &.active {
+    display: flex;
+  }
+}
+
+.contacts-text {
+  flex-basis: 33.33%;
+  margin-left: 8.33%;
+
+  p, ul, ol {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 33px;
+  }
+
+  a {
+    color: $color-accent;
+    text-decoration: none;
+  }
+}
+
+.contacts-map {
+  flex-basis: 58.33%;
+  height: 200px;
+  background-color: gray;
+}

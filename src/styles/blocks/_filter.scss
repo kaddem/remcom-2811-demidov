@@ -18,4 +18,8 @@
   line-height: 49px;
   color: inherit;
   text-decoration: none;
+
+  &.active {
+    color: $color-accent;
+  }
 }
