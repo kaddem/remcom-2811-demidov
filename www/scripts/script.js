@@ -71,4 +71,24 @@ $(document).ready(function(){
     });
   });
 
+  // Склик
+  $('.j-slider').slick({
+    arrows: true,
+    dots: true
+  });
+
+
+  // AJAX - отзывы
+  $.ajax({
+    type: 'POST',
+    url: '../jsons/reviews.json',
+    data: 'count=2',
+    success: function(responce) {
+      console.log(responce);
+    },
+    error: function() {
+      console.log('Упппсс...');
+    }
+  });
+
 });

@@ -1,0 +1,16 @@
+{
+  "reviews": [
+    {
+      "imageUrl": "images/ava-panda.jpg",
+      "imageAlt": "Панда есть бамбук",
+      "quote": "Очень все хорошо сделали! Принесли кучу бамбука!",
+      "name": "Панда"
+    },
+    {
+      "imageUrl": "images/ava-valdo.png",
+      "imageAlt": "Чебуратор с гармошкой",
+      "quote": "Гена прекрасен!",
+      "name": "Чебуратор"
+    }
+  ]
+}
