@@ -79,16 +79,48 @@ $(document).ready(function(){
 
 
   // AJAX - отзывы
-  $.ajax({
-    type: 'POST',
-    url: '../jsons/reviews.json',
-    data: 'count=2',
-    success: function(responce) {
-      console.log(responce);
-    },
-    error: function() {
-      console.log('Упппсс...');
-    }
+  
+
+  $('.j-reviews-btn').on('click', function() {
+    $.ajax({
+      type: 'POST',
+      url: '../jsons/reviews.json',
+      data: 'count=2',
+      success: function(responce) {
+        if (!responce.isShowMore) {
+          $('.j-reviews-btn').hide();
+        } 
+
+        let html = createHtml(responce.reviews);
+        printToPage(html);
+      },
+      error: function() {
+        console.log('Упппсс...');
+      }
+    });
   });
+
+
+  function createHtml(reviewsArray) {
+    let html = '';
+
+    reviewsArray.forEach(function(review) {
+      html = html + `<div class="reviews-item">
+      <img src="${review.imageUrl}" alt="${review.imageAlt}" class="reviews-ava" />
+      <div class="reviews-text">
+        <strong class="reviews-name">${review.name}</strong>
+        <blockquote class="reviews-quote">
+          “${review.quote}”
+        </blockquote>
+      </div>
+    </div>`;
+    });
+
+    return html;
+  }
+
+  function printToPage(stringHtml) {
+    $('.j-reviews-wrap').append(stringHtml);
+  }
 
 });
